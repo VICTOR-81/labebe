@@ -1,0 +1,33 @@
+.contacts{
+  margin-top: 24px;
+  &__title{
+    margin: 24px 0;
+    font-family: 'SilkSerif-Italic';
+    font-size: 25px;
+    line-height: 36px;
+    color: #1A1A1A;
+  }
+  &__subtitle{
+    margin-bottom: 12px;
+    font-family: 'Nunito-SemiBold';
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__list{
+    font-family: 'Nunito-Regular';
+    font-size: 14px;
+    line-height: 20px;
+    color: #1A1A1A;
+    span{
+      font-family: 'Nunito-SemiBold';
+    }
+    &-item{
+      margin: 8px 0;
+    }
+  }
+  &__map{
+    margin-top: 24px;
+    max-width: 603px;
+    height: 240px;
+  }
+}
