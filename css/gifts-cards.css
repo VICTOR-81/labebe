@@ -1,0 +1,96 @@
+.giftscards__banner {
+  margin-bottom: 24px;
+  background-color: #FCF9F4;
+}
+.giftscards__banner-info {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+.giftscards__banner-info__title {
+  margin-bottom: 8px;
+  font-family: "SilkSerif-Italic";
+  font-size: 25px;
+  line-height: 36px;
+  color: #1A1A1A;
+}
+.giftscards__banner-info__title sup {
+  font-family: "Nunito-Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+}
+.giftscards__banner-info__text {
+  font-family: "Nunito-Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+}
+.giftscards__banner-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.giftscards__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+@media (min-width: 600px) {
+  .giftscards__banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .giftscards__wrapper {
+    margin-top: 60px;
+  }
+  .giftscards__wrapper .card:nth-child(2n) {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 890px) {
+  .giftscards__wrapper .card:nth-child(3) {
+    margin-left: 10px;
+  }
+  .giftscards__banner-info {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+  .giftscards__banner-info__title {
+    font-size: 56px;
+    line-height: 76px;
+  }
+  .giftscards__banner-info__title sup {
+    font-family: "Nunito-SemiBold";
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+  }
+  .giftscards__banner-info__text {
+    max-width: 468px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 1190px) {
+  .giftscards__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .giftscards__wrapper .card {
+    margin: 0;
+  }
+}
