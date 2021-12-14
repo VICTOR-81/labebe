@@ -20,6 +20,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #828282;
+  bottom: 0;
 }
 .giftscards__banner-info__text {
   font-family: "Nunito-Regular";
@@ -28,12 +29,11 @@
   color: #828282;
 }
 .giftscards__banner-img {
-  max-width: 592px;
   width: 100%;
 }
 .giftscards__banner-img img {
   width: 100%;
-  height: 100%;
+  min-height: 312px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -48,6 +48,15 @@
       flex-wrap: wrap;
   margin-top: 32px;
 }
+.giftscards__wrapper .card {
+  width: 48%;
+}
+.giftscards__wrapper .card:nth-child(2n) {
+  margin-left: 10px;
+}
+.giftscards__wrapper .card__img img {
+  padding: 20px;
+}
 
 @media (min-width: 600px) {
   .giftscards__banner {
@@ -55,11 +64,11 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .giftscards__wrapper {
-    margin-top: 60px;
+  .giftscards__banner-img {
+    height: 100%;
   }
-  .giftscards__wrapper .card:nth-child(2n) {
-    margin-left: 10px;
+  .giftscards__wrapper .card__img img {
+    padding: 74px 40px;
   }
 }
 @media (min-width: 890px) {
@@ -73,12 +82,17 @@
   .giftscards__banner-info__title {
     font-size: 56px;
     line-height: 76px;
+    position: relative;
+    display: inline-block;
   }
   .giftscards__banner-info__title sup {
     font-family: "Nunito-SemiBold";
     font-size: 16px;
     line-height: 24px;
     color: #828282;
+    position: absolute;
+    top: 5px;
+    right: -20px;
   }
   .giftscards__banner-info__text {
     max-width: 468px;
@@ -105,6 +119,11 @@
     padding-left: 0;
   }
   .giftscards__banner-img {
-    margin-right: calc((100vw - 1180px) / 2);
+    width: 80%;
+  }
+}
+@media (min-width: 1440px) {
+  .giftscards__banner-img {
+    margin-right: calc((100vw - 1180px) / 2 - 120px);
   }
 }
