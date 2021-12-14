@@ -3,9 +3,7 @@
   background-color: #FCF9F4;
 }
 .giftscards__banner-info {
-  margin: 0 auto;
   padding: 0 20px;
-  max-width: 1200px;
   width: 100%;
   padding-top: 24px;
   padding-bottom: 20px;
@@ -28,6 +26,10 @@
   font-size: 14px;
   line-height: 20px;
   color: #828282;
+}
+.giftscards__banner-img {
+  max-width: 592px;
+  width: 100%;
 }
 .giftscards__banner-img img {
   width: 100%;
@@ -83,6 +85,9 @@
     font-size: 16px;
     line-height: 28px;
   }
+  .giftscards__banner-img {
+    width: 60%;
+  }
 }
 @media (min-width: 1190px) {
   .giftscards__wrapper {
@@ -92,5 +97,14 @@
   }
   .giftscards__wrapper .card {
     margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .giftscards__banner-info {
+    margin-left: calc((100vw - 1160px) / 2);
+    padding-left: 0;
+  }
+  .giftscards__banner-img {
+    margin-right: calc((100vw - 1160px) / 2);
   }
 }
