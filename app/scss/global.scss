@@ -101,6 +101,32 @@
   display: none;
 }
 
+.h1{
+  font-family: 'SilkSerif-Italic';
+  color: #1A1A1A;
+  @media (min-width: 890px) {
+    font-size: 56px;
+    line-height: 76px;
+    display: inline-block;
+    position: relative;
+  }
+}
+.sup{
+  font-family: 'Nunito-Regular';
+  font-size: 14px;
+  line-height: 20px;
+  color: #828282;
+  @media (min-width: 890px) {
+    font-family: 'Nunito-SemiBold';
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+  }
+}
+
 .icon{
   width: 52px;
   height: 52px;
@@ -142,6 +168,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #1A1A1A;
+  margin-top: 40px;
   li+li:before {
     padding: 8px;
     color: black;

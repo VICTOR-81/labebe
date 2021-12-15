@@ -1,0 +1,241 @@
+.reviewsandquestions{
+  &__title{
+    font-size: 25px;
+    line-height: 36px;
+    margin-top: 28px;
+    margin-bottom: 32px;
+  }
+  &__tabs{
+    border-bottom: 1.5px solid #F2F2F2;
+    padding-bottom: 8px;
+    max-width: 1080px;
+    &-item{
+      font-family: 'Nunito-SemiBold';
+      font-size: 16px;
+      line-height: 24px;
+      color: #828282;
+      cursor: pointer;
+      &:first-child{
+        margin-right: 82px;
+      }
+    }
+  }
+  &__reviews{
+    position: relative;
+    margin-top: 32px;
+    padding-bottom: 16px;
+    max-width: 1080px;
+    display: flex;
+    &:last-child{
+      border-bottom: none;
+    }
+    &-img{
+      min-width: 68px;
+      background-color: #FCF9F4;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+      img{
+        width: 52px;
+        height: 52px;
+        margin: 8px;
+      }
+    }
+    &-info{
+      &__name{
+        font-family: 'Nunito-SemiBold';
+        font-size: 16px;
+        line-height: 24px;
+        color: #1A1A1A;
+        margin-bottom: 8px;
+      }
+      &__rating{
+        &-stars{
+          margin-bottom: 4px;
+        }
+        &-date{
+          font-family: 'Nunito-SemiBold';
+          font-size: 12px;
+          line-height: 16px;
+          color: #828282;
+        }
+      }
+      &__review{
+        font-family: 'Nunito-Regular';
+        font-size: 14px;
+        line-height: 20px;
+        color: #1A1A1A;
+        border-bottom: 1.5px solid #F2F2F2;
+        padding-bottom: 16px;
+      }
+    }
+    &-wrapper{
+      display: none;
+    }
+  }
+  &__answer{
+    &-wrapper{
+      background-color: #F2F2F2;
+      padding: 12px;
+    }
+    &-name{
+      font-family: 'Nunito-SemiBold';
+      font-size: 12px;
+      line-height: 16px;
+      color: #828282;
+      margin-bottom: 8px;
+    }
+    &-date{
+      font-family: 'Nunito-SemiBold';
+      font-size: 14px;
+      line-height: 20px;
+      color: #828282;
+      display: none;
+    }
+    &-answer{
+      font-family: 'Nunito-Regular';
+      font-size: 14px;
+      line-height: 20px;
+      color: #1A1A1A;
+    }
+  }
+  &__questions-wrapper{
+    display: none;
+  }
+}
+
+.desktop{
+  display: none;
+}
+
+.icon{
+  &__delete, &__edit, &__dots{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+  &__delete{
+    top: 0;
+  }
+  &__edit{
+    top: 40px;
+  }
+  &__dots{
+    top: 24px;
+    right: 24px;
+    display: none;
+  }
+}
+
+.active__tab{
+  color: #1A1A1A;
+}
+
+.border{
+  border: none;
+}
+
+@media (min-width: 890px) {
+  .reviewsandquestions{
+    &__tabs{
+      &-item{
+        &:first-child{
+          margin-right: 60px;
+        }
+      }
+    }
+    &__title{
+      margin-top: 32px;
+      margin-bottom: 52px;
+    }
+    &__reviews{
+      margin-top: 0;
+      padding: 24px 24px 28px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+      &-img{
+        max-height: 152px;
+        img{
+          width: 72px;
+          height: 72px;
+          margin: 40px;
+        }
+      }
+      &-info{
+        &__name{
+          font-size: 20px;
+          line-height: 28px;
+        }
+        &__rating{
+          margin-bottom: 12px;
+          display: flex;
+          align-items: end;
+          &-date{
+            margin-left: 12px;
+            font-size: 14px;
+            line-height: 20px;
+            padding-bottom: 3px;
+          }
+        }
+        &__review{
+          font-size: 16px;
+          line-height: 28px;
+          border-bottom: none;
+        }
+        // &__review.mobile{
+        //   display: none;
+        // }
+        // &__review.desktop{
+        //   display: block;
+        // }
+      }
+    }
+    
+    &__questions{
+      &-wrapper{
+        .reviewsandquestions__reviews-info__rating-date{
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__answer{
+      &-wrapper{
+        background-color: transparent;
+        padding: 0;
+        margin-top: 24px;
+        margin-left: 60px;
+      }
+      &-name{
+        font-size: 16px;
+        line-height: 24px;
+        color: #1A1A1A;
+      }
+      &-date{
+        font-size: 14px;
+        line-height: 20px;
+        display: block;
+      }
+      &-answer{
+        margin-top: 12px;
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+  .icon{
+    &__delete, &__edit{
+      display: none;
+    }
+    &__dots{
+      display: block;
+    }
+  }
+  .mobile{
+    display: none;
+  }
+  .desktop{
+    display: block;
+  }
+}

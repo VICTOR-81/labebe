@@ -10,17 +10,8 @@
 }
 .giftscards__banner-info__title {
   margin-bottom: 8px;
-  font-family: "SilkSerif-Italic";
   font-size: 25px;
   line-height: 36px;
-  color: #1A1A1A;
-}
-.giftscards__banner-info__title sup {
-  font-family: "Nunito-Regular";
-  font-size: 14px;
-  line-height: 20px;
-  color: #828282;
-  bottom: 0;
 }
 .giftscards__banner-info__text {
   font-family: "Nunito-Regular";
