@@ -113,7 +113,6 @@
 .icon__delete, .icon__edit, .icon__dots {
   position: absolute;
   right: 0;
-  cursor: pointer;
 }
 .icon__delete {
   top: 0;

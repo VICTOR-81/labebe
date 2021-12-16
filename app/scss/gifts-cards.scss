@@ -1,34 +1,5 @@
 
 .giftscards{
-  &__banner{
-    margin-bottom: 24px;
-    background-color: #FCF9F4;
-    &-info{
-      padding: 0 20px;
-      width: 100%;
-      padding-top: 24px;
-      padding-bottom: 20px;
-      &__title{
-        margin-bottom: 8px;
-        font-size: 25px;
-        line-height: 36px;
-      }
-      &__text{
-        font-family: 'Nunito-Regular';
-        font-size: 14px;
-        line-height: 20px;
-        color: #828282;
-      }
-    }
-    &-img{
-      width: 100%;
-      img{
-        width: 100%;
-        min-height: 312px;
-        object-fit: cover;
-      }
-    }
-  }
   &__wrapper{
     display: flex;
     justify-content: center;
@@ -50,12 +21,6 @@
 
 @media (min-width: 600px) {
   .giftscards{
-    &__banner{
-       display: flex;
-       &-img{
-         height: 100%;
-       }
-    }
     &__wrapper{
       .card{
         &__img{
@@ -75,35 +40,6 @@
         margin-left: 10px;
       }
     }
-    &__banner{
-      &-info{
-        padding-top: 54px;
-        padding-bottom: 54px;
-      }
-      &-info__title{
-        font-size: 56px;
-        line-height: 76px;
-        position: relative;
-        display: inline-block;
-        sup{
-          font-family: 'Nunito-SemiBold';
-          font-size: 16px;
-          line-height: 24px;
-          color: #828282;
-          position: absolute;
-          top: 5px;
-          right: -20px;
-        }
-      }
-      &-info__text{
-        max-width: 468px;
-        font-size: 16px;
-        line-height: 28px;
-      }
-      &-img{
-        width: 60%;
-      }
-    }
   }
 }
 
@@ -117,28 +53,3 @@
     }
   }
 }
-
-@media (min-width: 1200px) {
-  .giftscards{
-    &__banner{
-      &-info{
-        margin-left: calc((100vw - 1180px) / 2);
-        padding-left: 0;
-      }
-      &-img{
-        width: 80%;
-      }
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .giftscards{
-    &__banner{
-      &-img{
-        margin-right: calc(((100vw - 1180px) / 2) - 120px);
-      }
-    }
-  }
-}
-
