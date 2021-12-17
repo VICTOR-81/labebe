@@ -3,22 +3,24 @@
     margin-top: 24px;
     margin-bottom: 24px;
     max-width: 624px;
-    background-color: #FCF9F4;
+    // background-color: #FCF9F4;
     // border-radius: 20px;
     display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
+    // justify-content: space-between;
+    // padding-right: 20px;
     overflow-x: scroll;
     &-item{
-      font-family: 'Nunito-Regular';
-      font-size: 14px;
-      line-height: 20px;
-      color: #828282;
-      padding: 8px 12px;
-      white-space: nowrap;
+      // font-family: 'Nunito-Regular';
+      // font-size: 14px;
+      // line-height: 20px;
+      // color: #828282;
+      // // padding: 8px 12px;
+      // white-space: nowrap;
       background-color: #FCF9F4;
       &:not(:first-child){
-        margin-left: 12px;
+        span{
+          margin-left: 12px;
+        }
       }
       &:first-child{
         border-top-left-radius: 20px;
@@ -28,6 +30,16 @@
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
       }
+      span{
+        display: block;
+        font-family: 'Nunito-Regular';
+        font-size: 14px;
+        line-height: 20px;
+        color: #828282;
+        padding: 8px 12px;
+        white-space: nowrap;
+        background-color: violet;
+        border-radius: 20px;
     }
   }
   &__box{
