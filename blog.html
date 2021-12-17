@@ -44,113 +44,158 @@
           <li>Reviews and questions</li>
         </ul>
         <ul class="blog__tabs">
-          <li class="blog__tabs-item active__blog-tab" data-btn="1">Furniture</li>
-          <li class="blog__tabs-item" data-btn="2">Advice</li>
-          <li class="blog__tabs-item" data-btn="3">Emotions</li>
-          <li class="blog__tabs-item" data-btn="4">Selection of goods</li>
-          <li class="blog__tabs-item" data-btn="5">6 and older</li>
-          <li class="blog__tabs-item" data-btn="6">From 2 to 6</li>
+          <li class="blog__tabs-item" data-btn="1"><span class="active__blog-tab">Furniture</span></li>
+          <li class="blog__tabs-item" data-btn="2"><span>Advice</span></li>
+          <li class="blog__tabs-item" data-btn="3"><span>Emotions</span></li>
+          <li class="blog__tabs-item" data-btn="4"><span>Selection of goods</span></li>
+          <li class="blog__tabs-item" data-btn="5"><span>6 and older</span></li>
+          <li class="blog__tabs-item" data-btn="6"><span>From 2 to 6</span></li>
         </ul>
         <div class="blog__box">
-          <div class="blog__box-search"></div>
-          <div class="blog__box-filter"></div>
-        </div>
-        <div class="blog__post-wrapper">
-          <div class="blog__post-img">
-            <img src="images/blog-post-1.png" alt="">
+          <div class="blog__box-search">
+            <button>
+              <img src="images/loupe.svg" alt="">
+            </button>
+            <input type="text" placeholder="search by keyword">
           </div>
-          <div class="blog__post-name">
-            9 tips for pregnant women to survive the summer heat
-          </div>
-          <div class="blog__post-description">
-            Summer, hurray! The days are longer and the temperature is soaring that we can't wait to get out...
-          </div>
-          <div class="blog__post-info">
-            <div class="blog__post-date">2 days ago</div>
-            <div class="blog__post-read">6 min read</div>
-          </div>
-        </div>
-        <!-- <div class="reviewsandquestions__reviews-wrapper tabs__item show" data-content="1">
-          <div class="reviewsandquestions__reviews">
-            <img class="icon__delete" src="images/delete.svg" alt="">
-            <img class="icon__edit" src="images/edit.svg" alt="">
-            <img class="icon__dots" src="images/icon-dots.svg" alt="">
-            <div class="reviewsandquestions__reviews-img">
-              <img src="images/reviews-img1.png" alt="">
-            </div>
-            <div class="reviewsandquestions__reviews-info">
-              <div class="reviewsandquestions__reviews-info__name">Skv company julia light</div>
-              <div class="reviewsandquestions__reviews-info__rating">
-                <div class="reviewsandquestions__reviews-info__rating-stars">
-                  <img src="images/stars.svg" alt="">
-                </div>
-                <div class="reviewsandquestions__reviews-info__rating-date">September 3, 2021</div>
-              </div>
-              <div class="reviewsandquestions__reviews-info__review desktop">
-                Definitely the best quality. ✰✰✰✰✰ Thank you. . I am no longer talking about service and your favorite
-                consultant.
-              </div>
-            </div>
-          </div>
-          <div class="reviewsandquestions__reviews-info__review mobile">
-            Definitely the best quality. ✰✰✰✰✰ Thank you. . I am no longer talking about service and your favorite
-            consultant.
-          </div>
-          <div class="reviewsandquestions__reviews">
-            <img class="icon__delete" src="images/delete.svg" alt="">
-            <img class="icon__edit" src="images/edit.svg" alt="">
-            <img class="icon__dots" src="images/icon-dots.svg" alt="">
-            <div class="reviewsandquestions__reviews-img">
-              <img src="images/reviews-img2.png" alt="">
-            </div>
-            <div class="reviewsandquestions__reviews-info">
-              <div class="reviewsandquestions__reviews-info__name">Skv company julia light</div>
-              <div class="reviewsandquestions__reviews-info__rating">
-                <div class="reviewsandquestions__reviews-info__rating-stars">
-                  <img src="images/stars.svg" alt="">
-                </div>
-                <div class="reviewsandquestions__reviews-info__rating-date">September 3, 2021</div>
-              </div>
-              <div class="reviewsandquestions__reviews-info__review desktop">
-                Definitely the best quality. ✰✰✰✰✰ Thank you. . I am no longer talking about service and your favorite
-                consultant.
-              </div>
-            </div>
-          </div>
-          <div class="reviewsandquestions__reviews-info__review mobile">
-            Definitely the best quality. ✰✰✰✰✰ Thank you. . I am no longer talking about service and your favorite
-            consultant.
+          <div class="blog__box-filter">
+            Sort by:
+            <select>
+              <option>Latest</option>
+              <option>--------</option>
+              <option>--------</option>
+              <option>--------</option>
+              <option>--------</option>
+            </select>
           </div>
         </div>
-        <div class="reviewsandquestions__questions-wrapper tabs__item" data-content="2">
-          <div class="reviewsandquestions__reviews">
-            <div class="reviewsandquestions__reviews-img">
-              <img src="images/reviews-img1.png" alt="">
+        <div class="blog__post-main">
+          <div class="blog__post-wrapper">
+            <div class="blog__post-img radius">
+              <img src="images/blog-post-1.png" alt="">
             </div>
-            <div class="reviewsandquestions__reviews-info">
-              <div class="reviewsandquestions__reviews-info__name">Skv company julia light</div>
-              <div class="reviewsandquestions__reviews-info__rating-date">September 3, 2021</div>
-              <div class="reviewsandquestions__reviews-info__review border desktop">
-                Hey! Please tell me the size of the crib?
-              </div>
-              <div class="reviewsandquestions__answer-wrapper desktop">
-                <div class="reviewsandquestions__answer-name">Store representative</div>
-                <div class="reviewsandquestions__answer-date">September 3, 2021</div>
-                <div class="reviewsandquestions__answer-answer">Hey! 132 X 72 X 103H. The dimensions of the crib are
-                  indicated in the product card</div>
-              </div>
+            <div class="blog__post-name">
+              9 tips for pregnant women to survive the summer heat
+            </div>
+            <div class="blog__post-description">
+              Summer, hurray! The days are longer and the temperature is soaring that we can't wait to get out...
+            </div>
+            <div class="blog__post-info">
+              <div class="blog__post-date">2 days ago</div>
+              <div class="blog__post-read">6 min read</div>
             </div>
           </div>
-          <div class="reviewsandquestions__reviews-info__review border mobile">
-            Hey! Please tell me the size of the crib?
+          <div class="blog__post-wrapper">
+            <div class="blog__post-img radius">
+              <img src="images/blog-post-2.png" alt="">
+            </div>
+            <div class="blog__post-name">
+              How to choose a highchair?
+            </div>
+            <div class="blog__post-description">
+              The translation of the child into the prophet symbolizes the need to train additional seats in one chair
+              ...
+            </div>
+            <div class="blog__post-info">
+              <div class="blog__post-date">2 days ago</div>
+              <div class="blog__post-read">6 min read</div>
+            </div>
           </div>
-          <div class="reviewsandquestions__answer-wrapper radius mobile">
-            <div class="reviewsandquestions__answer-name">Store representative</div>
-            <div class="reviewsandquestions__answer-date">September 3, 2021</div>
-            <div class="reviewsandquestions__answer-answer">Hey! 132 X 72 X 103H. The dimensions of the crib are
-              indicated in the product card</div>
+          <div class="blog__post-wrapper">
+            <div class="blog__post-img radius">
+              <img src="images/blog-post-3.png" alt="">
+            </div>
+            <div class="blog__post-name">
+              Children's room arrangement: the secrets of modern design
+            </div>
+            <div class="blog__post-description">
+              Children's room arrangement: the secrets of modern design
+            </div>
+            <div class="blog__post-info">
+              <div class="blog__post-date">2 days ago</div>
+              <div class="blog__post-read">6 min read</div>
+            </div>
           </div>
-        </div> -->
+          <div class="blog__post-wrapper">
+            <div class="blog__post-img radius">
+              <img src="images/blog-post-4.png" alt="">
+            </div>
+            <div class="blog__post-name">
+              20 modern nursery design ideas
+            </div>
+            <div class="blog__post-description">
+              A child's own room is his little world, where he spends part of his time. And the fashionable and original
+              interior will also...
+            </div>
+            <div class="blog__post-info">
+              <div class="blog__post-date">2 days ago</div>
+              <div class="blog__post-read">6 min read</div>
+            </div>
+          </div>
+          <div class="blog__post-wrapper">
+            <div class="blog__post-img radius">
+              <img src="images/blog-post-1.png" alt="">
+            </div>
+            <div class="blog__post-name">
+              9 tips for pregnant women to survive the summer heat
+            </div>
+            <div class="blog__post-description">
+              Summer, hurray! The days are longer and the temperature is soaring that we can't wait to get out...
+            </div>
+            <div class="blog__post-info">
+              <div class="blog__post-date">2 days ago</div>
+              <div class="blog__post-read">6 min read</div>
+            </div>
+          </div>
+          <div class="blog__post-wrapper">
+            <div class="blog__post-img radius">
+              <img src="images/blog-post-2.png" alt="">
+            </div>
+            <div class="blog__post-name">
+              How to choose a highchair?
+            </div>
+            <div class="blog__post-description">
+              The translation of the child into the prophet symbolizes the need to train additional seats in one chair
+              ...
+            </div>
+            <div class="blog__post-info">
+              <div class="blog__post-date">2 days ago</div>
+              <div class="blog__post-read">6 min read</div>
+            </div>
+          </div>
+          <div class="blog__post-wrapper">
+            <div class="blog__post-img radius">
+              <img src="images/blog-post-3.png" alt="">
+            </div>
+            <div class="blog__post-name">
+              Children's room arrangement: the secrets of modern design
+            </div>
+            <div class="blog__post-description">
+              We learn to properly equip a room for a newborn, preschool and school age child. Rooms for boys, girls and
+              two children...
+            </div>
+            <div class="blog__post-info">
+              <div class="blog__post-date">2 days ago</div>
+              <div class="blog__post-read">6 min read</div>
+            </div>
+          </div>
+          <div class="blog__post-wrapper">
+            <div class="blog__post-img radius">
+              <img src="images/blog-post-4.png" alt="">
+            </div>
+            <div class="blog__post-name">
+              20 modern nursery design ideas
+            </div>
+            <div class="blog__post-description">
+              A child's own room is his little world, where he spends part of his time. And the fashionable and original
+              interior will also...
+            </div>
+            <div class="blog__post-info">
+              <div class="blog__post-date">2 days ago</div>
+              <div class="blog__post-read">6 min read</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

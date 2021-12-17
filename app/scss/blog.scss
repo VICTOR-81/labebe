@@ -2,25 +2,16 @@
   &__tabs{
     margin-top: 24px;
     margin-bottom: 24px;
-    max-width: 624px;
-    // background-color: #FCF9F4;
-    // border-radius: 20px;
+    max-width: 778px;
     display: flex;
-    // justify-content: space-between;
-    // padding-right: 20px;
     overflow-x: scroll;
+    &::-webkit-scrollbar {
+      height: 0;
+    }
     &-item{
-      // font-family: 'Nunito-Regular';
-      // font-size: 14px;
-      // line-height: 20px;
-      // color: #828282;
-      // // padding: 8px 12px;
-      // white-space: nowrap;
       background-color: #FCF9F4;
-      &:not(:first-child){
-        span{
-          margin-left: 12px;
-        }
+      &:not(:first-child) span{
+        margin-left: 12px;
       }
       &:first-child{
         border-top-left-radius: 20px;
@@ -38,19 +29,74 @@
         color: #828282;
         padding: 8px 12px;
         white-space: nowrap;
-        background-color: violet;
         border-radius: 20px;
+      }
     }
   }
   &__box{
     margin-bottom: 32px;
+    border-bottom: 1px solid #BDBDBD;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    &-search{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      input{
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+        margin-left: 12px;
+        &::placeholder{
+          font-family: 'Nunito-SemiBold';
+          font-size: 12px;
+          line-height: 16px;
+          color: #828282;
+        }
+      }
+    }
+    &-filter{
+      font-family: 'Nunito-SemiBold';
+      font-size: 12px;
+      line-height: 16px;
+      color: #1A1A1A;
+      select{
+        border: none;
+        font-family: 'Nunito-SemiBold';
+        font-size: 12px;
+        line-height: 16px;
+        color: #1A1A1A;
+        appearance: none;
+        background-image: url('../images/filter-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: right 0 top 50%;
+        background-size: 10px auto;
+        padding-right: 8px;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
   }
   &__post{
+    &-main{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 64px;
+      column-gap: 16px;
+    }
     &-wrapper{
-      max-width: 592px;
+      max-width: 100%;
     }
     &-img{
-
+      width: 100%;
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
     }
     &-name{
       font-family: 'SilkSerif-Regular';
@@ -99,8 +145,69 @@
   }
 }
 
-.active__blog-tab{
+span.active__blog-tab{
   background-color: rgba(86, 149, 135, 0.9);
   border-radius: 20px;
   color: #FFFFFF;
+}
+
+@media (min-width: 660px) {
+  .blog{
+    &__tabs{
+      &-item{
+        span{
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+    &__box{
+      &-search{
+        input{
+          &::placeholder{
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+      &-filter{
+        font-size: 16px;
+        line-height: 24px;
+        select{
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 700px) {
+  .blog{
+    &__post{
+      &-main{
+        justify-content: space-between;
+      }
+      &-wrapper{
+        max-width: calc((100% - 40px) / 2);
+        row-gap: 52px;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .blog{
+    &__post{
+      &-name{
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 20px;
+        margin-bottom: 48px;
+      }
+      &-description{
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
 }
