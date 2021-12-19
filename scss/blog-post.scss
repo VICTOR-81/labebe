@@ -97,6 +97,11 @@
   }
   .card{
     margin-bottom: 80px;
+    &__img{
+      img{
+        padding: 20px;
+      }
+    }
     .slider__img{
       height: 40vw;
       img{
