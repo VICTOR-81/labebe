@@ -141,9 +141,6 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal {
   }
 }
 @media (min-width: 800px) {
-  .blogpost__recommend {
-    display: block;
-  }
   .blogpost .blog__post-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160,12 +157,10 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal {
        -moz-column-gap: 32px;
             column-gap: 32px;
   }
-  .blogpost .swiper {
-    display: none;
-  }
 }
 @media (min-width: 1024px) {
   .blogpost__recommend {
+    display: block;
     margin-top: 345px;
   }
   .blogpost .card {
@@ -179,5 +174,8 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal {
     font-size: 16px;
     line-height: 28px;
     margin: 24px 0;
+  }
+  .blogpost .swiper {
+    display: none;
   }
 }
