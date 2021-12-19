@@ -103,10 +103,13 @@
 .blogpost .card {
   margin-bottom: 80px;
 }
-.blogpost .card__img {
+.blogpost .card__img img {
+  padding: 20px;
+}
+.blogpost .card .slider__img {
   height: 40vw;
 }
-.blogpost .card__img img {
+.blogpost .card .slider__img img {
   padding: 16px;
 }
 .blogpost .slider__title {
@@ -132,7 +135,7 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal {
 }
 
 @media (min-width: 578px) {
-  .blogpost .card__img {
+  .blogpost .card .slider__img {
     height: 27vw;
   }
 }
