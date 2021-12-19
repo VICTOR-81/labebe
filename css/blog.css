@@ -239,6 +239,12 @@ span.active__blog-tab {
     max-width: calc((100% - 40px) / 2);
     row-gap: 52px;
   }
+  .blog__post-name {
+    min-height: 72px;
+  }
+  .blog__post-description {
+    min-height: 62px;
+  }
 }
 @media (min-width: 900px) {
   .blog__post-name {

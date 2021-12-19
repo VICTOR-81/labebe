@@ -164,6 +164,7 @@
 }
 .breadcrumb{
   display: flex;
+  flex-wrap: wrap;
   font-family: 'Nunito-Regular';
   font-size: 14px;
   line-height: 20px;

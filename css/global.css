@@ -200,6 +200,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: "Nunito-Regular";
   font-size: 14px;
   line-height: 20px;
