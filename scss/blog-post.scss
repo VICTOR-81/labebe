@@ -86,7 +86,7 @@
   }
   &__recommend{
     display: none;
-    margin-top: 348px;
+    margin-top: 245px;
     &-title{
       font-size: 22px;
       line-height: 36px;
@@ -96,6 +96,7 @@
     }
   }
   .card{
+    width: 250px;
     margin-bottom: 80px;
     &__img{
       img{
@@ -144,9 +145,6 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal{
 
 @media (min-width: 800px) {
   .blogpost{
-    &__recommend{
-      display: block;
-    }
     .blog__post{
       &-main{
         display: flex;
@@ -159,14 +157,18 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal{
       display: flex;
       column-gap: 32px;
     }
-    .swiper{
-      display: none;
-    }
+    // .swiper{
+    //   display: none;
+    // }
   }
 }
 
 @media (min-width: 1024px) {
   .blogpost{
+    &__recommend{
+      display: block;
+      margin-top: 345px;
+    }
     .card{
       width: 280px;
     }
@@ -178,6 +180,9 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal{
       font-size: 16px;
       line-height: 28px;
       margin: 24px 0;
+    }
+    .swiper{
+      display: none;
     }
   }
 }

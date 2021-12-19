@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 3,
         spaceBetween: 20
       },
+      800: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      },
     }
   });
 
