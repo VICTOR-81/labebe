@@ -1,0 +1,55 @@
+
+.giftscards{
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    .card{
+      width: 48%;
+      &:nth-child(2n){
+        margin-left: 10px;
+      }
+      &__img{
+        img{
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .giftscards{
+    &__wrapper{
+      .card{
+        &__img{
+          img{
+            padding: 74px 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 890px) {
+  .giftscards{
+    &__wrapper{
+      .card:nth-child(3){
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1190px) {
+  .giftscards{
+    &__wrapper{
+      justify-content: space-between;
+      .card{
+        margin: 0;
+      }
+    }
+  }
+}
