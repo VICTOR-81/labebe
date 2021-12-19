@@ -86,7 +86,7 @@
   }
   &__recommend{
     display: none;
-    margin-top: 348px;
+    margin-top: 245px;
     &-title{
       font-size: 22px;
       line-height: 36px;
@@ -96,6 +96,7 @@
     }
   }
   .card{
+    width: 250px;
     margin-bottom: 80px;
     &__img{
       img{
@@ -167,6 +168,9 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal{
 
 @media (min-width: 1024px) {
   .blogpost{
+    &__recommend{
+      margin-top: 345px;
+    }
     .card{
       width: 280px;
     }

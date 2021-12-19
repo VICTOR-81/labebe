@@ -91,7 +91,7 @@
 }
 .blogpost__recommend {
   display: none;
-  margin-top: 348px;
+  margin-top: 245px;
 }
 .blogpost__recommend-title {
   font-size: 22px;
@@ -101,6 +101,7 @@
   margin-bottom: 24px;
 }
 .blogpost .card {
+  width: 250px;
   margin-bottom: 80px;
 }
 .blogpost .card__img img {
@@ -164,6 +165,9 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal {
   }
 }
 @media (min-width: 1024px) {
+  .blogpost__recommend {
+    margin-top: 345px;
+  }
   .blogpost .card {
     width: 280px;
   }
