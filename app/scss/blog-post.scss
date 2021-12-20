@@ -34,7 +34,7 @@
   }
   &__wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     column-gap: 32px;
   }
   &__post{
@@ -157,14 +157,14 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal{
       display: flex;
       column-gap: 32px;
     }
-    // .swiper{
-    //   display: none;
-    // }
   }
 }
 
 @media (min-width: 1024px) {
   .blogpost{
+    &__wrapper{
+      justify-content: space-between;
+    }
     &__recommend{
       display: block;
       margin-top: 345px;

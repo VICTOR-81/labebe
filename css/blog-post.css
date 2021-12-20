@@ -33,9 +33,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-column-gap: 32px;
      -moz-column-gap: 32px;
           column-gap: 32px;
@@ -159,6 +159,11 @@ div.swiper-pagination-progressbar.swiper-pagination-horizontal {
   }
 }
 @media (min-width: 1024px) {
+  .blogpost__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .blogpost__recommend {
     display: block;
     margin-top: 345px;
