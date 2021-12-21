@@ -42,8 +42,7 @@
           <div class="order__wrapper">
             <ul class="breadcrumb">
               <li><a class="link" href="#">Home</a></li>
-              <li><a class="link" href="#">Blog</a></li>
-              <li>20 modern nursery design ideas</li>
+              <li>Checkout</li>
             </ul>
             <div class="order__delivery">
               <h1 class="order__title">How to deliver the order?</h1>
@@ -98,7 +97,7 @@
                   </div>
                 </div>
               </div>
-              <form class="order__form order__content" data-content="2" action="">
+              <fieldset class="order__form order__content" data-content="2" action="">
                 <label class="label" for="">
                   Address
                   <input class="input radius" type="text">
@@ -123,8 +122,8 @@
                     <input class="input radius" type="text">
                   </label>
                 </div>
-              </form>
-              <form class="order__form order__content" data-content="3" action="">
+              </fieldset>
+              <fieldset class="order__form order__content" data-content="3" action="">
                 <div class="order__form-wrapper">
                   <label class="label" for="">
                     Locality
@@ -155,7 +154,7 @@
                     <input class="input radius" type="text">
                   </label>
                 </div>
-              </form>
+              </fieldset>
             </div>
             <div class="order__btn">
               <button class="order__btn-back__desktop">
@@ -172,13 +171,12 @@
       <div class="container">
         <ul class="breadcrumb">
           <li><a class="link" href="#">Home</a></li>
-          <li><a class="link" href="#">Blog</a></li>
-          <li>20 modern nursery design ideas</li>
+          <li>Checkout</li>
         </ul>
         <div class="order__details">
           <h1 class="order__title">Details of the recipient</h1>
           <div class="order__details-wrapper">
-            <form action="" class="order__details-form">
+            <fieldset action="" class="order__details-form">
               <label for="" class="label">
                 Name*
                 <input type="text" class="input radius" placeholder="Enter your name">
@@ -191,7 +189,7 @@
                 E-mail*
                 <input type="text" class="input radius" placeholder="Enter your e-mail">
               </label>
-            </form>
+            </fieldset>
             <div class="order__details-info">
               <div class="order__details-title">Indicate real data! </div>
               <div class="order__details-text">You may be asked for a passport, before handing over the paid order.
@@ -206,6 +204,138 @@
           </button>
           <button class="order__btn-continue btn btn__green radius">continue</button>
           <button class="order__btn-back__mobile btn radius">go back one step</button>
+        </div>
+      </div>
+      <!-- Select a Payment Method -->
+      <div class="order__payment">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li><a class="link" href="#">Home</a></li>
+            <li>Checkout</li>
+          </ul>
+          <h1 class="order__title">Select a Payment Method</h1>
+          <ul class="order__tabs">
+            <li class="order__tabs-item radius active__order-tab" data-tab="4">
+              <div class="order__tabs-item__name">
+                Сard online
+              </div>
+              <div class="order__tabs-item__info">
+                Visa, Mastercard, Amex
+              </div>
+            </li>
+            <li class="order__tabs-item radius" data-tab="5">
+              <div class="order__tabs-item__name">
+                Cash on delivery or pickup
+              </div>
+              <div class="order__tabs-item__info">
+                Cash Only
+              </div>
+            </li>
+            <li class="order__tabs-item radius" data-tab="6">
+              <div class="order__tabs-item__name">
+                Card on delivery or pickup
+              </div>
+              <div class="order__tabs-item__info">
+                <div class="order__tabs-item__info">
+                  Visa, Mastercard, Amex
+                </div>
+              </div>
+            </li>
+            <li class="order__tabs-item radius" data-tab="7">
+              <div class="order__tabs-item__name">
+                Online installments
+              </div>
+              <div class="order__tabs-item__info">
+                <div class="order__tabs-item__info">
+                  Bank of Georgia, Space credit, TBC Bank
+                </div>
+              </div>
+            </li>
+          </ul>
+          <fieldset class="order__form order__content show" data-content="4" action="">
+            <label class="label" for="">
+              Card number*
+              <input class="input radius" type="text">
+            </label>
+            <div class="order__form-wrapper">
+              <label class="label" for="">
+                Expiration Date*
+                <input class="input radius" type="text">
+              </label>
+              <label class="label cvv-info" for="">
+                CVV*
+                <input class="input radius" type="text">
+              </label>
+            </div>
+          </fieldset>
+          <div class="order__payment-inner order__content" data-content="5">
+            You can pay in cash to the courier when choosing delivery, or pay in cash at the checkout in our store.
+          </div>
+          <div class="order__payment-inner order__content" data-content="6">
+            You can pay in cash to the courier when choosing delivery, or pay in cash at the checkout in our store.
+          </div>
+          <div class="order__payment-banks order__content" data-content="7">
+            <label class="label" for="custom-radio">
+              <input class='custom-radio' id="custom-radio" name='bank' type="radio">
+              <div>
+                <img src="images/bank-1.png" alt="">
+                Online installment plan of the Bank of Georgia
+              </div>
+            </label>
+            <label class="label" for="custom-radio">
+              <input class='custom-radio' id="custom-radio" name='bank' type="radio">
+              <div>
+                <img src="images/bank-2.png" alt="">
+                Online installment plan of the TBC Bank
+              </div>
+            </label>
+            <label class="label" for="custom-radio">
+              <input class='custom-radio' id="custom-radio" name='bank' type="radio">
+              <div>
+                <img src="images/bank-3.png" alt="">
+                Online installment plan of the Space credit
+              </div>
+            </label>
+          </div>
+          <div class="order__btn">
+            <button class="order__btn-back__desktop">
+              <img src="images/back-arrow.svg" alt="">
+              Return to cart
+            </button>
+            <button class="order__btn-continue btn btn__green radius">
+              <span>continue</span>
+              <span>place an order</span>
+            </button>
+            <button class="order__btn-back__mobile btn radius">go back one step</button>
+          </div>
+        </div>
+      </div>
+      <!-- Thank you! -->
+      <div class="order__status">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li><a class="link" href="#">Home</a></li>
+            <li>Checkout</li>
+          </ul>
+          <div class="order__status-wrapper">
+            <img src="images/checked-status.svg" alt="" class="order__status-img">
+            <div class="order__status-title">Thank you!</div>
+            <p class="order__status-number">
+              Your order  number is А-231411 has been successfully placed
+            </p>
+            <p class="order__status-text">
+              Our managers will contact you within 30 minutes 
+            </p>
+            <p class="order__status-text">
+              You can track the status of the order in your personal account.
+            </p>
+          </div>
+          <div class="order__btn">
+            <button class="order__btn-continue btn btn__green radius">
+              go to personal account
+            </button>
+            <button class="order__btn-back__mobile btn radius">Go back to main page</button>
+          </div>
         </div>
       </div>
     </section>

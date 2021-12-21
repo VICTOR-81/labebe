@@ -25,7 +25,7 @@
     }
     &-item{
       border: 1px solid #C4C4C4;
-      padding: 16px 0 16px 16px;
+      padding: 16px 16px 16px 16px;
       min-width: 236px;
       &__name{
         font-family: 'Nunito-SemiBold';
@@ -66,6 +66,7 @@
   &__btn{
     margin-top: 32px;
     max-width: 696px;
+    margin-bottom: 32px;
     &-back__desktop{
       display: flex;
       align-items: center;
@@ -95,20 +96,21 @@
     margin-bottom: 32px;
     max-height: 180px;
     overflow-y: scroll;
-    margin-right: -22px;
+    margin-right: -14px;
+    padding-right: 10px;
     max-width: 696px;
     &::-webkit-scrollbar {
-      width: 22px;
+      width: 4px;
     }
     &::-webkit-scrollbar-thumb {
       box-shadow: inset 0 0 0 1px #828282;
-      border: solid 10px transparent;
-      border-radius: 22px;
+      border: solid 1px transparent;
+      border-radius: 4px;
     }
     &::-webkit-scrollbar-track{
       box-shadow: inset 0 0 0 1px #E0E0E0;
-      border: solid 10px transparent;
-      border-radius: 22px;
+      border: solid 1px transparent;
+      border-radius: 4px;
     }
     
     &-wrapper{
@@ -138,10 +140,182 @@
   input{
     margin-bottom: 16px;
   }
+  &__payment{
+    .order__form{
+      overflow: visible;
+      max-width: 384px;
+    }
+    .order__btn-continue{
+      span:nth-child(2){
+        display: none;
+      }
+    }
+    &-inner{
+      font-family: 'Nunito-Regular';
+      font-size: 14px;
+      line-height: 20px;
+      color: #1A1A1A;
+      max-width: 472px;
+    }
+    &-banks{
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      label{
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      input{
+        margin-right: 12px;
+        margin-bottom: 0;
+      }
+      input[type="radio"]{
+        width: 16px;
+        height: 16px;
+        border: 1.5px solid #CCCCCC;
+        appearance: none;
+        border-radius: 50%;
+      }
+      input[type=radio]:checked{
+        width: 16px;
+        height: 16px;
+        border: none;
+        background-color: rgba(86, 149, 135, 0.9);
+        position: relative;
+      }
+      input[type=radio]:checked::after{
+        position: absolute;
+        content: url('../images/check.svg');
+      }
+    }
+  }
+  &__status{
+    &-wrapper{
+      text-align: center;
+      max-width: 417px;
+      margin: 0 auto;
+      margin-top: 72px;
+      margin-bottom: 118px;
+    }
+    &-img{
+      margin: 0 auto;
+    }
+    &-title{
+      font-family: 'SilkSerif-Italic';
+      font-size: 25px;
+      line-height: 36px;
+      color: #1A1A1A;
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+    &-number{
+      font-family: 'Nunito-SemiBold';
+      font-size: 16px;
+      line-height: 24px;
+      color: #1A1A1A;
+    }
+    &-text{
+      font-family: 'Nunito-Regular';
+      font-size: 14px;
+      line-height: 20px;
+      color: #1A1A1A;
+    }
+    p:nth-child(4){
+      margin-top: 12px;
+      margin-bottom: 16px;
+    }
+    .order__btn{
+      flex-direction: column;
+      justify-content: center;
+      max-width: 100%;
+      
+    }
+  }
+}
+.order__content{
+  display: none;
+}
+.cvv-info{
+  position: relative;
+  &::after{
+    position: absolute;
+    content:url('../images/CVV-info.svg');
+    right: 32px;
+    top: 0;
+  }
 }
 
 .active__order-tab{
   border: 1.5px solid #569587;
+}
+
+@media (min-width: 384px) {
+  .order{
+    &__payment{
+      .order__form{
+        &-wrapper{
+          label:nth-child(2){
+            max-width: 120px;
+            &::after{
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }   
+}
+
+@media (min-width: 415px) {
+  .order{
+    &__status{
+      &-wrapper{
+        margin-top: 60px;
+        margin-bottom: 20px;
+      }
+      &-img{
+        width: 80px;
+        height: 80px;
+      }
+      &-title{
+        font-size: 40px;
+        line-height: 62px;
+        margin-top: 20px;
+        margin-bottom: 28px;
+      }
+      &-number{
+        font-size: 20px;
+        line-height: 28px;
+      }
+      &-text{
+        font-size: 16px;
+        line-height: 28px;
+      }
+      p:nth-child(4){
+        margin-top: 12px;
+        margin-bottom: 100px;
+      }
+      p:nth-child(5){
+        font-family: 'Nunito-SemiBold';
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .order__btn{
+        max-width: 275px;
+        margin: 0 auto;
+        margin-bottom: 86px;
+        &-continue{
+          max-width: 100%;
+        }
+        &-back__mobile{
+          display: block;
+          text-transform: none;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 600px) {
@@ -154,7 +328,6 @@
       line-height: 62px;
     }
     &__form{
-      max-width: 592px;
       input{
         height: 48px;
       }
@@ -170,8 +343,39 @@
       line-height: 24px;
     }
     &__details-form{
-        max-width: 592px;
+      max-width: 592px;
+    }
+    &__payment{
+      &-inner{
+        font-size: 16px;
+        line-height: 28px;
       }
+      &-banks{
+        input{
+          margin-bottom: 0;
+        }
+        input[type="radio"]{
+          width: 20px;
+          height: 20px;
+          border: 1.5px solid #CCCCCC;
+          appearance: none;
+          border-radius: 50%;
+        }
+        input[type=radio]:checked{
+          width: 20px;
+          height: 20px;
+          border: none;
+          background-color: rgba(86, 149, 135, 0.9);
+          position: relative;
+        }
+        input[type=radio]:checked::after{
+          position: absolute;
+          content: url('../images/check2.svg');
+          top: 1px;
+          left: 1px;
+        }
+      }
+    }
   }
 }
 
@@ -180,6 +384,7 @@
     &__tabs{
       &-item{
         min-width: 220px;
+        padding: 20px;
       }
     }
     &__btn{
@@ -197,6 +402,22 @@
       }
       &-back__desktop{
         display: flex;
+      }
+    }
+    &__form{
+      padding-right: 100px;
+    }
+    &__payment{
+      .order__form{
+        padding-right: 0;
+      }
+      .order__btn-continue{
+        span:nth-child(1){
+          display: none;
+        }
+        span:nth-child(2){
+          display: inline;
+        }
       }
     }
   }
@@ -233,6 +454,15 @@
       }
       &-text{
         max-width: 284px;
+      }
+    }
+    &__details{
+      .order__tabs{
+        justify-content: space-between;
+        &-item{
+          max-width: 280px;
+          width: 100%;
+        }
       }
     }
   }  
