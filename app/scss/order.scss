@@ -25,13 +25,14 @@
     }
     &-item{
       border: 1px solid #C4C4C4;
-      padding: 16px 16px 16px 16px;
+      padding: 16px;
       min-width: 236px;
       &__name{
         font-family: 'Nunito-SemiBold';
         font-size: 14px;
         line-height: 20px;
         color: #1A1A1A;
+        margin-bottom: 4px;
       }
       &__info{
         font-family: 'Nunito-Regular';
@@ -89,7 +90,7 @@
       font-size: 13px;
       line-height: 20px;
       text-transform: uppercase;
-      color: rgba(86, 149, 135, 0.9)
+      color: rgba(86, 149, 135, 0.9);
     }
   }
   &__form{
@@ -166,6 +167,9 @@
         align-items: center;
         font-size: 12px;
         line-height: 16px;
+        &:not(:nth-child(1)){
+          margin-top: 16px;
+        }
       }
       input{
         margin-right: 12px;
@@ -232,6 +236,9 @@
       max-width: 100%;
       
     }
+  }
+  &__btn-back__mobile.btn{
+    box-shadow: 0px 0px 0px ;
   }
 }
 .order__content{
@@ -342,8 +349,13 @@
       font-size: 16px;
       line-height: 24px;
     }
-    &__details-form{
-      max-width: 592px;
+    &__details{
+      &-wrapper{
+        margin-left: 52px;
+      }
+      &-form{
+        max-width: 592px;
+      }
     }
     &__payment{
       &-inner{
@@ -351,6 +363,14 @@
         line-height: 28px;
       }
       &-banks{
+        label{
+          &:not(:nth-child(1)){
+            margin-top: 32px;
+          }
+          img{
+            max-width: 110%;
+          }
+        }
         input{
           margin-bottom: 0;
         }
@@ -385,6 +405,9 @@
       &-item{
         min-width: 220px;
         padding: 20px;
+        &__name{
+          margin-bottom: 8px;
+        }
       }
     }
     &__btn{
@@ -419,19 +442,22 @@
           display: inline;
         }
       }
+      .order__tabs{
+        justify-content: space-between;
+        &-item{
+          width: 280px;
+        }
+      }
     }
   }
 }
 
 @media (min-width: 1024px) {
   .order{
-    &__map{
-      display: none;
-    }
-    &__map-wrapper{
-      display: block;
-    }
     &__details{
+      &-wrapper{
+        margin-left: 0;
+      }
       &-form{
         min-width: 592px;
       }
@@ -466,4 +492,15 @@
       }
     }
   }  
+}
+
+@media (min-width: 1054px) {
+  .order{
+    &__map{
+      display: none;
+    }
+    &__map-wrapper{
+      display: block;
+    }
+  }
 }

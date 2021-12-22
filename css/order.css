@@ -29,7 +29,7 @@
 }
 .order__tabs-item {
   border: 1px solid #C4C4C4;
-  padding: 16px 16px 16px 16px;
+  padding: 16px;
   min-width: 236px;
 }
 .order__tabs-item__name {
@@ -37,6 +37,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #1A1A1A;
+  margin-bottom: 4px;
 }
 .order__tabs-item__info {
   font-family: "Nunito-Regular";
@@ -190,6 +191,9 @@
   font-size: 12px;
   line-height: 16px;
 }
+.order__payment-banks label:not(:nth-child(1)) {
+  margin-top: 16px;
+}
 .order__payment-banks input {
   margin-right: 12px;
   margin-bottom: 0;
@@ -257,6 +261,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 100%;
+}
+.order__btn-back__mobile.btn {
+  -webkit-box-shadow: 0px 0px 0px;
+          box-shadow: 0px 0px 0px;
 }
 
 .order__content {
@@ -349,12 +357,21 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .order__details-wrapper {
+    margin-left: 52px;
+  }
   .order__details-form {
     max-width: 592px;
   }
   .order__payment-inner {
     font-size: 16px;
     line-height: 28px;
+  }
+  .order__payment-banks label:not(:nth-child(1)) {
+    margin-top: 32px;
+  }
+  .order__payment-banks label img {
+    max-width: 110%;
   }
   .order__payment-banks input {
     margin-bottom: 0;
@@ -386,6 +403,9 @@
   .order__tabs-item {
     min-width: 220px;
     padding: 20px;
+  }
+  .order__tabs-item__name {
+    margin-bottom: 8px;
   }
   .order__btn {
     margin-bottom: 50px;
@@ -424,13 +444,18 @@
   .order__payment .order__btn-continue span:nth-child(2) {
     display: inline;
   }
+  .order__payment .order__tabs {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .order__payment .order__tabs-item {
+    width: 280px;
+  }
 }
 @media (min-width: 1024px) {
-  .order__map {
-    display: none;
-  }
-  .order__map-wrapper {
-    display: block;
+  .order__details-wrapper {
+    margin-left: 0;
   }
   .order__details-form {
     min-width: 592px;
@@ -467,5 +492,13 @@
   .order__details .order__tabs-item {
     max-width: 280px;
     width: 100%;
+  }
+}
+@media (min-width: 1054px) {
+  .order__map {
+    display: none;
+  }
+  .order__map-wrapper {
+    display: block;
   }
 }
