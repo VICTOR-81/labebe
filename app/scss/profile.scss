@@ -1,0 +1,228 @@
+.profile{
+  &__title.h1{
+    margin-top: 32px;
+    display: none;
+  }
+  &__avatar-wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 32px;
+    max-width: 488px;
+  }
+  &__avatar-img{
+    img{
+      max-width: 68px;
+      object-fit: cover;
+    }
+  }
+  &__avatar-inner{
+    margin-left: 16px;
+    max-width: 236px;
+    button{
+      font-family: 'Nunito-SemiBold';
+      font-size: 12px;
+      line-height: 16px;
+      color: #569587;
+    }
+  }
+  &__avatar-text{
+    font-family: 'Nunito-Regular';
+    font-size: 14px;
+    line-height: 20px;
+    color: #1A1A1A;
+    margin-bottom: 8px;
+  }
+  &__tabs{
+    display: flex;
+    column-gap: 45px;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid #F2F2F2;
+    overflow-x: scroll;
+    &::-webkit-scrollbar{
+      height: 0;
+    }
+    &-item{
+      font-family: 'Nunito-SemiBold';
+      font-size: 16px;
+      line-height: 24px;
+      color: #828282;
+      white-space: nowrap;
+      &-active{
+        color: #1A1A1A;
+      }
+    }
+  }
+  &__content{
+    &-inner{
+      margin-top: 32px;
+      display: none;
+    }
+    &-box{
+      max-width: 592px;
+    }
+    &-item{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      padding-bottom: 8px;
+      border-bottom: 1.5px solid #F2F2F2;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: 'Nunito-Regular';
+      color: #1A1A1A;
+      &:not(:nth-child(1)){
+        margin-top: 16px;
+      }
+    }
+    &-title{
+      margin-bottom: 8px;
+      color: #828282;
+    }
+    &-payment{
+      label{
+        border: 1.5px solid #C4C4C4;
+        padding: 12px 20px;
+        max-width: 384px;
+        width: 100%;
+        display: flex;
+      }
+      label + label{
+        margin-top: 12px;
+      }
+      input{
+        width: 100%;
+        &::placeholder{
+          font-family: 'Nunito-Regular';
+          font-size: 16px;
+          line-height: 28px;
+          color: #1A1A1A;
+        }
+      }
+    }
+    &-checkbox__wrapper{
+      margin-top: 24px;
+      label{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        font-family: 'Nunito-Regular';
+        font-size: 14px;
+        line-height: 20px;
+        color: #1A1A1A;
+        &:not(:nth-child(1)){
+          margin-top: 24px;
+        }
+      }
+      input{
+        width: 20px;
+        height: 20px;
+        appearance: none;
+        border: 1px solid #C4C4C4;
+        border-radius: 3px;
+      }
+      input:checked{
+        width: 20px;
+        height: 20px;
+        border: none;
+        background-color: rgba(86, 149, 135, 0.9);
+        position: relative;
+      }
+      input:checked::after{
+        position: absolute;
+        content: url('../images/check.svg');
+        transform: scale(1.4);
+        top: 2px;
+        left: 2px;
+      }
+    }
+  }
+}
+
+@media (min-width: 460px) {
+  .profile{
+    &__avatar-img{
+      img{
+        max-width: 100px;
+      }
+    }
+    &__avatar-text{
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+    &__avatar-inner{
+      margin-left: 32px;
+      max-width: 280px;
+      button{
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &__tabs{
+      column-gap: 100px;
+    }
+    &__content{
+      &-box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      &-title{
+        width: 100%;
+      }
+      &-data{
+        width: 100%;
+      }
+      &-btn{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .profile{
+    &__title.h1{
+      display: block;
+      font-size: 56px;
+      line-height: 76px;
+    }
+    &__avatar-wrapper{
+      margin-top: 40px;
+      margin-bottom: 52px;
+    }
+    &__avatar-img{
+      img{
+        max-width: 176px;
+      }
+    }
+    &__tabs{
+      padding-bottom: 12px;
+    }
+    &-inner{
+      margin-top: 40px;
+    }
+    &__content{
+      &-item{
+        padding-bottom: 24px;
+        &:not(:nth-child(1)){
+          margin-top: 32px;
+        }
+        &:first-child{
+          border-bottom: transparent;
+        }
+        &:last-child{
+          border-bottom: 1.5px solid #F2F2F2;
+        }
+      }
+      &-personal{
+        .profile__content-item{
+          &:nth-child(2){
+            border-bottom: transparent;
+          }
+        }
+      }
+    }
+  }
+}

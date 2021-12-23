@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/404.css">
+  <link rel="stylesheet" href="css/contacts.css">
+  <link rel="stylesheet" href="css/gifts-cards.css">
+  <link rel="stylesheet" href="css/reviews-and-questions.css">
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/blog-post.css">
+  <link rel="stylesheet" href="css/order.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/subscribe.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+  <script src="js/profile.js"></script>
+  <script src="js/order.js"></script>
+  <script src="js/swiper.js" defer></script>
+  <script src="js/tabs.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="main__wrapper">
+    <section class="profile">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a class="link" href="#">Home</a></li>
+          <li>Profile details</li>
+        </ul>
+        <h1 class="profile__title h1">Profile details</h1>
+        <div class="profile__avatar-wrapper">
+          <div class="profile__avatar-img around">
+            <img src="images/avatar.png" alt="">
+          </div>
+          <div class="profile__avatar-inner">
+            <div class="profile__avatar-text">
+              This photo is used in replies, comments and reviews.
+            </div>
+            <button class="profile__avatar-btn">
+              Upload new
+            </button>
+          </div>
+        </div>
+        <ul class="profile__tabs">
+          <li class="profile__tabs-item cp profile__tabs-item-active" data-tab='1'>Personal data</li>
+          <li class="profile__tabs-item cp" data-tab='2'>Delivery address</li>
+          <li class="profile__tabs-item cp" data-tab='3'>Payment data</li>
+          <li class="profile__tabs-item cp" data-tab='4'>Notifications</li>
+        </ul>
+        <div class="profile__content-wrapper">
+          <!-- Personal data -->
+          <div class="profile__content-inner show" data-content='1'>
+            <ul class="profile__content-list profile__content-personal">
+              <li class="profile__content-item">
+                <div class="profile__content-box">
+                  <div class="profile__content-title">Name and surname</div>
+                  <div class="profile__content-data">Nika Elizbarashvili</div>
+                </div>
+                <button class="profile__content-btn">
+                  <img src="images/edit.svg" alt="">
+                </button>
+              </li>
+              <li class="profile__content-item">
+                <div class="profile__content-box">
+                  <div class="profile__content-title">Gender</div>
+                  <div class="profile__content-data">male</div>
+                </div>
+                <button class="profile__content-btn">
+                  <img src="images/edit.svg" alt="">
+                </button>
+              </li>
+              <li class="profile__content-item">
+                <div class="profile__content-box">
+                  <div class="profile__content-title">Birthday</div>
+                  <div class="profile__content-data">not indicated</div>
+                </div>
+                <button class="profile__content-btn">
+                  <img src="images/edit.svg" alt="">
+                </button>
+              </li>
+              <li class="profile__content-item">
+                <div class="profile__content-box">
+                  <div class="profile__content-title">Phone</div>
+                  <div class="profile__content-data">+995*******57 </div>
+                </div>
+                <button class="profile__content-btn">
+                  <img src="images/edit.svg" alt="">
+                </button>
+              </li>
+              <li class="profile__content-item">
+                <div class="profile__content-box">
+                  <div class="profile__content-title">E-mail</div>
+                  <div class="profile__content-data">nikaelia@gmail.com </div>
+                </div>
+                <button class="profile__content-btn">
+                  <img src="images/edit.svg" alt="">
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Delivery address -->
+          <div class="profile__content-inner" data-content='2'>
+            <ul class="profile__content-list profile__content-delivery">
+              <li class="profile__content-item">
+                <div class="profile__content-box">
+                  <div class="profile__content-title">Locality</div>
+                  <div class="profile__content-data">Tbilisi</div>
+                </div>
+                <button class="profile__content-btn">
+                  <img src="images/edit.svg" alt="">
+                </button>
+              </li>
+              <li class="profile__content-item">
+                <div class="profile__content-box">
+                  <div class="profile__content-title">Address</div>
+                  <div class="profile__content-data">Abashidze 12</div>
+                </div>
+                <button class="profile__content-btn">
+                  <img src="images/edit.svg" alt="">
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Payment data -->
+          <div class="profile__content-inner profile__content-payment" data-content='3'>
+            <label class="radius" for="">
+              <input type="text" placeholder="Visa **2345">
+              <button>
+                <img src="images/delete-basket.svg" alt="">
+              </button>
+            </label>
+            <label class="radius" for="">
+              <input type="text" placeholder="Upload new">
+              <button>
+                <img src="images/plus.svg" alt="">
+              </button>
+            </label>
+          </div>
+          <!-- Notifications -->
+          <div class="profile__content-inner" data-content='4'>
+            <ul class="profile__content-list profile__content-notifications">
+              <li class="profile__content-item">
+                <div class="profile__content-box">
+                  <div class="profile__content-title">Receive to address</div>
+                  <div class="profile__content-data">nikaelia@gmail.com </div>
+                </div>
+                <button class="profile__content-btn">
+                  <img src="images/edit.svg" alt="">
+                </button>
+              </li>
+            </ul>
+            <div class="profile__content-checkbox__wrapper">
+              <label for=""><input type="checkbox">The store's response to my reviews</label>
+              <label for=""><input type="checkbox">Mailings about discounts and promotions</label>
+              <label for=""><input type="checkbox">Product notifications in favorites and comparisons</label>
+              <label for=""><input type="checkbox">Articles from the Labebe blog</label>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__logo">
+              <img src="images/footer-logo.svg" alt="">
+            </div>
+            <div class="footer__category">
+              <div class="footer__category-item">
+                <div class="footer__category-title">About</div>
+                <ul class="footer__category-list">
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">About Us</a>
+                  </li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Gifts Cards</a>
+                  </li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Blog</a></li>
+                </ul>
+              </div>
+              <div class="footer__category-item">
+                <div class="footer__category-title">Shop</div>
+                <ul class="footer__category-list">
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Children's
+                      furniture</a></li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Children's
+                      mattresses</a></li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Linens</a></li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Toys</a></li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Strollers</a>
+                  </li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Child car
+                      seats</a></li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Bathing
+                      accessories</a></li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Feeding
+                      accessories</a></li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Promotional
+                      offers</a></li>
+                </ul>
+              </div>
+              <div class="footer__category-item">
+                <div class="footer__category-title">Customer Care</div>
+                <ul class="footer__category-list">
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Payment</a>
+                  </li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Shipping</a>
+                  </li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Warranty</a>
+                  </li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Return
+                      policy</a></li>
+                </ul>
+              </div>
+              <div class="footer__category-item">
+                <div class="footer__category-title">Contact Us</div>
+                <ul class="footer__category-list">
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Call: 599 84 56
+                      76</a></li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">E-mail:
+                      babylandgeorgia@gmail.com </a></li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Address:
+                      Georgia, Tbilisi, 25 Al. Kazbegi Ave. (M2 Building)</a></li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Mon - Sun 10:00
+                      - 19:00</a></li>
+                </ul>
+              </div>
+              <div class="footer__category-item">
+                <div class="footer__category-title">Follow Us</div>
+                <ul class="footer__category-list">
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Facebook</a>
+                  </li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Instagram</a>
+                  </li>
+                  <li class="footer__category-list__item"><a href="#" class="footer__category-link link">Youtube</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__notes">
+              <div class="footer__info">
+                <div class="footer__info-pay">
+                  <div class="footer__info-images">
+                    <img src="images/visa.svg" alt="">
+                    <img src="images/mastercard.svg" alt="">
+                    <img src="images/maestro.svg" alt="">
+                    <img src="images/paypal.svg" alt="">
+                    <img src="images/discover.svg" alt="">
+                  </div>
+                  <div class="footer__info-rights">
+                    © Labebe 2021. All Rights Reserved
+                  </div>
+                </div>
+                <ul class="footer__info-list">
+                  <li class="footer__info-item"><a href="#" class="footer__info-link link">Privacy Policy</a></li>
+                  <li class="footer__info-item"><a href="#" class="footer__info-link link">Cookie Policy</a></li>
+                  <li class="footer__info-item"><a href="#" class="footer__info-link link">Terms & Conditions</a></li>
+                  <li class="footer__info-item"><a href="#" class="footer__info-link link">Legal notice</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
